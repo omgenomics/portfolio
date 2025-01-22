@@ -18,9 +18,21 @@ import Experience from "$components/Experience.svelte";
 <SectionHeader title="Featured Projects" />
 
 <Row cols={{ xl: 3, lg: 3, md: 2, sm: 1, xs: 1 }}>
-	<ProjectCard name="🗣️ Talk at BioXYZ Conf 2024" date="June 2024" url="https://google.com" img="/" description="Description" />
+	<ProjectCard
+		name="🗣️ Talk at BioXYZ Conf 2024"
+		date="June 2024"
+		url="https://google.com"
+		img="/"
+		description="Description"
+	/>
 
-	<ProjectCard name="Our tool XYZ is now published" date="December 2023" url="https://google.com" img="/" description="Description" />
+	<ProjectCard
+		name="Our tool XYZ is now published"
+		date="December 2023"
+		url="https://google.com"
+		img="/"
+		description="Description"
+	/>
 </Row>
 
 <Experience start="January 2 2023" end="March 15 2024" company="CZI" url="https://google.com" />

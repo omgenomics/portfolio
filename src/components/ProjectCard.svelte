@@ -1,11 +1,7 @@
 <script>
 import { Card, Col } from "@sveltestrap/sveltestrap";
 
-export let name;
-export let date = null;
-export let description = "";
-export let url;
-export let img;
+let { name, date = null, description = "", url, img } = $props();
 </script>
 
 <Col>

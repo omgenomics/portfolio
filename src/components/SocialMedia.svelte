@@ -1,6 +1,5 @@
 <script>
 import { Icon, NavItem, NavLink, Tooltip } from "@sveltestrap/sveltestrap";
-const ICONS = { email: "envelope-open" };
 const NAMES = {
 	email: "E-mail",
 	github: "GitHub",
@@ -10,8 +9,7 @@ const NAMES = {
 	bsky: "Blue Sky"
 };
 
-export let platform = "";
-export let href = "#";
+let { platform = "", href = "#" } = $props();
 </script>
 
 <NavItem>
@@ -22,7 +20,12 @@ export let href = "#";
 		</Tooltip>
 
 		{#if platform === "bsky"}
-			<img height="14" alt="Bluesky" class="align-baseline" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg" />
+			<img
+				height="14"
+				alt="Bluesky"
+				class="align-baseline"
+				src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg"
+			/>
 		{:else}
 			{@const iconName = platform === "email" ? "envelope-open" : platform}
 			<Icon name={iconName} />

@@ -2,11 +2,7 @@
 import { ListGroupItem } from "@sveltestrap/sveltestrap";
 import { format, formatDistanceStrict } from "date-fns";
 
-export let start = "January 1 1970";
-export let end = null;
-export let company = null;
-export let url = null;
-export let image = null;
+let { start = "January 1 1970", end = null, company = null, url = null, image = null, title, summary } = $props();
 
 const startDate = new Date(start);
 const endDate = end ? new Date(end) : new Date();
@@ -34,6 +30,6 @@ const nbYears = formatDistanceStrict(startDate, endDate);
 		{/if}
 	</small>
 
-	<p class="fw-bold mb-1"><slot name="title" /></p>
-	<p class="col-xl-9"><slot name="summary" /></p>
+	<p class="fw-bold mb-1">{@render title?.()}</p>
+	<p class="col-xl-9">{@render summary?.()}</p>
 </ListGroupItem>

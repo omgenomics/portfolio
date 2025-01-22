@@ -1,13 +1,6 @@
 <script>
 import { ListGroupItem } from "@sveltestrap/sveltestrap";
-
-export let url;
-export let title;
-export let description = null;
-export let date;
-export let venue = null;
-export let emoji = "📄";
-export let author = null;
+let { url, title, description = null, date, venue = null, emoji = "📄", author = null } = $props();
 </script>
 
 <ListGroupItem class="p-0 pt-3">

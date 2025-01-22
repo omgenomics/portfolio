@@ -1,18 +1,21 @@
 <script>
-import { page } from "$app/stores";
-import { MY_NAME, NAVBAR_CATEGORIES } from "$lib/config";
+import { page } from "$app/state";
 import { Collapse, Container, Nav, NavItem, NavLink, Navbar, NavbarBrand, Styles } from "@sveltestrap/sveltestrap";
 import SocialMedia from "$components/SocialMedia.svelte";
+import { MY_NAME, NAVBAR_CATEGORIES } from "$lib/config";
 
-let title = "";
-let nav = "";
-$: path = $page.url.pathname;
-$: nav = path.split("/")[1];
-$: if (!nav) {
-	title = "";
-} else {
-	title = nav[0].toUpperCase() + nav.slice(1) + " - ";
-}
+let { children } = $props();
+
+// Update page title when navigate to a new page
+let title = $state("");
+$effect(() => {
+	const nav = page.url.pathname.split("/")[1];
+	if (!nav) {
+		title = "";
+	} else {
+		title = nav[0].toUpperCase() + nav.slice(1) + " - ";
+	}
+});
 </script>
 
 <Styles />
@@ -34,6 +37,7 @@ $: if (!nav) {
 				{#each NAVBAR_CATEGORIES as category, i}
 					{@const label = category[0].toUpperCase() + category.slice(1)}
 					{@const url = i === 0 ? "/" : `/${category}`}
+					{@const path = page.url.pathname}
 					{@const disabled = i === 0 ? path === "/" : path === url || path === `${url}/`}
 					<div class="nav-item">
 						<NavItem><NavLink href={url} {disabled}>{label}</NavLink></NavItem>
@@ -46,7 +50,7 @@ $: if (!nav) {
 
 <Container md>
 	<div class="border-top border-4 mb-3"></div>
-	<slot />
+	{@render children?.()}
 
 	<footer class="py-3 my-4 border-top ps-0 opacity-75">
 		<Nav class="float-end">
