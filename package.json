@@ -22,6 +22,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltestrap/sveltestrap": "^6.2.8"
+		"@sveltestrap/sveltestrap": "^6.2.8",
+		"date-fns": "^4.1.0"
 	}
 }

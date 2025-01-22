@@ -19,7 +19,8 @@ $: if (!nav) {
 
 <svelte:head>
 	<title>
-		{title} {MY_NAME}
+		{title}
+		{MY_NAME}
 	</title>
 </svelte:head>
 

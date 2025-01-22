@@ -7,11 +7,11 @@ import { ListGroup } from "@sveltestrap/sveltestrap";
 <SectionHeader title="Work Experience" />
 
 <ListGroup flush>
-<!-- TBD -->
+	<!-- TBD -->
 </ListGroup>
 
 <SectionHeader title="Education" />
 
 <ListGroup flush>
-<!-- TBD -->
+	<!-- TBD -->
 </ListGroup>
