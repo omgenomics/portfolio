@@ -1,5 +1,5 @@
 <script>
-import { Card, Col } from "sveltestrap";
+import { Card, Col } from "@sveltestrap/sveltestrap";
 
 export let name;
 export let date = null;

@@ -1,5 +1,5 @@
 <script>
-import { Icon, NavItem, NavLink, Tooltip } from "sveltestrap";
+import { Icon, NavItem, NavLink, Tooltip } from "@sveltestrap/sveltestrap";
 const ICONS = { email: "envelope-open" };
 const NAMES = {
 	email: "E-mail",

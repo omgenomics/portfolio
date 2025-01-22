@@ -1,7 +1,7 @@
 <script>
 import { page } from "$app/stores";
 import { MY_NAME, NAVBAR_CATEGORIES } from "$lib/config";
-import { Collapse, Container, Nav, NavItem, NavLink, Navbar, NavbarBrand, Styles } from "sveltestrap";
+import { Collapse, Container, Nav, NavItem, NavLink, Navbar, NavbarBrand, Styles } from "@sveltestrap/sveltestrap";
 import SocialMedia from "$components/SocialMedia.svelte";
 
 let title = "";

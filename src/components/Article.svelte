@@ -1,5 +1,5 @@
 <script>
-import { ListGroupItem } from "sveltestrap";
+import { ListGroupItem } from "@sveltestrap/sveltestrap";
 
 export let url;
 export let title;

@@ -1,5 +1,5 @@
 <script>
-import { ListGroupItem } from "sveltestrap";
+import { ListGroupItem } from "@sveltestrap/sveltestrap";
 
 export let start = "January 1 1970";
 export let end = null;

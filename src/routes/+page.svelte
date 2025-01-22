@@ -1,5 +1,5 @@
 <script>
-import { Row } from "sveltestrap";
+import { Row } from "@sveltestrap/sveltestrap";
 import ProjectCard from "$components/ProjectCard.svelte";
 import SectionHeader from "$components/SectionHeader.svelte";
 import { CARD_ROWS } from "$lib/config";
