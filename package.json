@@ -1,0 +1,27 @@
+{
+	"name": "portfolio",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-cloudflare": "^2.3.3",
+		"@sveltejs/kit": "^1.30.3",
+		"@sveltejs/vite-plugin-svelte": "^2.5.3",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.30.0",
+		"prettier": "^3.1.1",
+		"prettier-plugin-svelte": "^3.1.2",
+		"svelte": "^3.59.1",
+		"vite": "^4.2.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"sveltestrap": "^5.11.2"
+	}
+}
