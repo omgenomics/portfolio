@@ -8,9 +8,9 @@ export let company = null;
 export let url = null;
 export let image = null;
 
-$: startDate = new Date(start);
-$: endDate = end ? new Date(end) : new Date();
-$: nbYears = formatDistanceStrict(startDate, endDate);
+const startDate = new Date(start);
+const endDate = end ? new Date(end) : new Date();
+const nbYears = formatDistanceStrict(startDate, endDate);
 </script>
 
 <ListGroupItem class="p-0 mt-2">

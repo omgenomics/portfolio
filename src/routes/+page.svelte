@@ -24,3 +24,4 @@ import Experience from "$components/Experience.svelte";
 </Row>
 
 <Experience start="January 2 2023" end="March 15 2024" company="CZI" url="https://google.com" />
+<Experience start="January 1 2021" end="Jan 1 2023" company="Yes" url="https://google.com" />
