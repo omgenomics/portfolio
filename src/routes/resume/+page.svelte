@@ -7,7 +7,8 @@ import { ListGroup } from "@sveltestrap/sveltestrap";
 <SectionHeader title="Work Experience" />
 
 <ListGroup flush>
-	<!-- TBD -->
+	<Experience start="January 2 2023" end="March 15 2024" company="Corp" url="https://google.com" />
+	<Experience start="January 1 2021" end="Jan 1 2023" company="Yes" url="https://google.com" />
 </ListGroup>
 
 <SectionHeader title="Education" />

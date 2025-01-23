@@ -6,7 +6,7 @@ const NAMES = {
 	linkedin: "LinkedIn",
 	medium: "Medium",
 	twitter: "Twitter",
-	bsky: "Blue Sky"
+	bsky: "Bluesky"
 };
 
 let { platform = "", href = "#" } = $props();
@@ -20,12 +20,7 @@ let { platform = "", href = "#" } = $props();
 		</Tooltip>
 
 		{#if platform === "bsky"}
-			<img
-				height="14"
-				alt="Bluesky"
-				class="align-baseline"
-				src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg"
-			/>
+			<img height="14" width="14" alt="Bluesky" class="align-baseline" src="/assets/bluesky.svg" />
 		{:else}
 			{@const iconName = platform === "email" ? "envelope-open" : platform}
 			<Icon name={iconName} />

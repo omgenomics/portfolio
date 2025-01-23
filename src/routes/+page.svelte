@@ -7,7 +7,7 @@ import Experience from "$components/Experience.svelte";
 
 <div class="d-flex bg-light p-4 fs-5 rounded-3 border border-2 border-primary-subtle">
 	<div class="align-middle pe-3">
-		<img height="60" class="rounded-circle" src="/" alt="That's me :)" />
+		<img height="60" src="/assets/headshot.jpg" alt="That's me :)" />
 	</div>
 	<div>
 		Bioinformatics scientist at <a href="https://google.com" target="_blank">XYZ Biotech</a>
@@ -34,6 +34,3 @@ import Experience from "$components/Experience.svelte";
 		description="Description"
 	/>
 </Row>
-
-<Experience start="January 2 2023" end="March 15 2024" company="CZI" url="https://google.com" />
-<Experience start="January 1 2021" end="Jan 1 2023" company="Yes" url="https://google.com" />
