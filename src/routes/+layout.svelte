@@ -2,7 +2,7 @@
 import { page } from "$app/state";
 import { Collapse, Container, Nav, NavItem, NavLink, Navbar, NavbarBrand, Styles } from "@sveltestrap/sveltestrap";
 import SocialMedia from "$components/SocialMedia.svelte";
-import { MY_NAME, NAVBAR_CATEGORIES } from "$lib/config";
+import { MY_NAME, NAVBAR_CATEGORIES, SOCIAL_MEDIA } from "$lib/config";
 
 let { children } = $props();
 
@@ -54,11 +54,9 @@ $effect(() => {
 
 	<footer class="py-3 my-4 border-top ps-0 opacity-75">
 		<Nav class="float-end">
-			<SocialMedia platform="email" href="mailto:myemail" />
-			<SocialMedia platform="github" href="https://github.com/my_name" />
-			<SocialMedia platform="linkedin" href="https://linkedin.com/in/my_name" />
-			<SocialMedia platform="medium" href="https://my_name.medium.com/" />
-			<SocialMedia platform="bsky" href="https://bsky.app/profile/my_name" />
+			{#each SOCIAL_MEDIA as social}
+				<SocialMedia platform={social.platform} href={social.url} />
+			{/each}
 		</Nav>
 	</footer>
 </Container>

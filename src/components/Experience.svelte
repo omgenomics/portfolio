@@ -2,14 +2,14 @@
 import { ListGroupItem } from "@sveltestrap/sveltestrap";
 import { format, formatDistanceStrict } from "date-fns";
 
-let { start = "January 1 1970", end = null, company = null, url = null, image = null, title, summary } = $props();
+let { start = "January 1 1970", end = null, company = null, url = null, image = null, children } = $props();
 
 const startDate = new Date(start);
 const endDate = end ? new Date(end) : new Date();
 const nbYears = formatDistanceStrict(startDate, endDate);
 </script>
 
-<ListGroupItem class="p-0 mt-2">
+<ListGroupItem class="px-0 py-3">
 	<h5 class="mt-1 mb-1">
 		{#if image}
 			<img class="me-1" width="35" height="35" src={image} alt="Logo for {company}" />
@@ -30,6 +30,5 @@ const nbYears = formatDistanceStrict(startDate, endDate);
 		{/if}
 	</small>
 
-	<p class="fw-bold mb-1">{@render title?.()}</p>
-	<p class="col-xl-9">{@render summary?.()}</p>
+	{@render children?.()}
 </ListGroupItem>

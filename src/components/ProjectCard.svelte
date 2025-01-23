@@ -20,6 +20,8 @@ let { name, date = null, description = "", url, img } = $props();
 				</small>
 			{/if}
 		</p>
-		<img height="300" class="object-fit-cover" src={img} alt="{name} screenshot" />
+		{#if img}
+			<img height="300" class="object-fit-cover" src={img} alt="{name} screenshot" />
+		{/if}
 	</Card>
 </Col>

@@ -1,0 +1,35 @@
+/* Vertical timeline (adapted from https://stackoverflow.com/a/56523658) */
+.timeline {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.timeline li {
+	position: relative;
+	padding: 0 10px 10px 30px;
+}
+
+.timeline li:after {
+	content: "";
+	position: absolute;
+	background: var(--bs-teal);
+	width: 10px;
+	height: 10px;
+	left: 8px;
+	top: 7px;
+	border-radius: 50%;
+}
+
+.timeline li:before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 20px;
+	left: 8px;
+	top: 2px;
+	background-image: radial-gradient(circle at 2.5px, #ccc 1px, rgba(255, 255, 255, 0) 2.5px);
+	background-position: top, right, bottom, left;
+	background-size: 15px 15px;
+	background-repeat: repeat-y;
+}
