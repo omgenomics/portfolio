@@ -7,5 +7,19 @@ import SectionHeader from "$components/SectionHeader.svelte";
 <SectionHeader title="Articles" />
 
 <ListGroup flush>
-	<!-- TBD -->
+	<Article
+		title="How to install the bioinformatics tool XYZ on Mac OS"
+		venue="My blog"
+		date="June 2024"
+		emoji="🧑‍💻"
+		url="https://google.com"
+	/>
+
+	<Article
+		title="Single-cell RNA sequencing of 1 trillion cells reveals much heterogeneity"
+		date="January 2023"
+		venue="Nature Science Cell"
+		emoji="🧬"
+		url="https://google.com"
+	/>
 </ListGroup>

@@ -3,7 +3,7 @@ export const MY_NAME = "John Doe";
 
 // The first navbar category links to the home page while the others link to their routes
 // e.g. "resume" goes to "src/routes/resume/+page.svelte"
-export const NAVBAR_CATEGORIES = ["about", "resume", "talks", "articles"];
+export const NAVBAR_CATEGORIES = ["about", "resume", "articles", "talks"];
 
 // Social media links
 export const SOCIAL_MEDIA = [

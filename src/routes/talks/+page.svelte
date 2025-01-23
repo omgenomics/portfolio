@@ -7,5 +7,5 @@ import SectionHeader from "$components/SectionHeader.svelte";
 <SectionHeader title="Talks" />
 
 <ListGroup flush>
-	<!-- TBD -->
+	<Article title="My experience debugging..." venue="My blog" date="June 2024" emoji="🧑‍💻" url="https://google.com" />
 </ListGroup>

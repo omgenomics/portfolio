@@ -37,11 +37,11 @@ import { ListGroup } from "@sveltestrap/sveltestrap";
 <SectionHeader title="Education" />
 
 <ListGroup flush>
-	<Experience start="August 2013" end="January 2017" company="Graduate School of Biology" url="https://google.com">
+	<Experience start="August 2012" end="May 2017" company="Graduate School of Biology" url="https://google.com">
 		<div class="fw-bold">PhD in Biology</div>
 		Studied the effect of XYZ...
 	</Experience>
-	<Experience start="September 2009" end="August 2013" company="School of Biological Biology" url="https://google.com">
+	<Experience start="September 2008" end="August 2012" company="School of Biological Biology" url="https://google.com">
 		<div class="fw-bold">B.Sc. in Biology</div>
 	</Experience>
 </ListGroup>
