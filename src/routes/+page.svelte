@@ -17,19 +17,21 @@ import SectionHeader from "$components/SectionHeader.svelte";
 <SectionHeader title="Featured Projects" />
 
 <Row cols={{ xl: 3, lg: 3, md: 2, sm: 1, xs: 1 }}>
+	<!-- Photo by <a href="https://unsplash.com/@xteemu">Teemu Paananen</a> on <a href="https://unsplash.com/photos/pic-bzdhc5b3Bxs">Unsplash</a> -->
 	<ProjectCard
 		name="🗣️ Talk at BioConf 2024"
 		date="Nov 2024"
 		url="https://google.com"
-		img="TODO"
-		description="Spoke about spatial transcriptomics"
+		img="/assets/talk.jpg"
+		description="How we used spatial transcriptomics to..."
 	/>
 
+	<!-- Photo by <a href="https://unsplash.com/@chuttersnap">CHUTTERSNAP</a> on <a href="https://unsplash.com/photos/pic-UmncJq4KPcA">Unsplash</a> -->
 	<ProjectCard
 		name="📝 Our XYZ paper has been published"
 		date="December 2023"
 		url="https://google.com"
-		img="/"
-		description="We present XYZ, a new tool for something or other"
+		img="/assets/plants.jpg"
+		description="We assembled the Rainbow eucalyptus genome..."
 	/>
 </Row>
