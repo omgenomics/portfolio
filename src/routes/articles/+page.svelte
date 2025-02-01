@@ -12,7 +12,7 @@ import SectionHeader from "$components/SectionHeader.svelte";
 		venue="My blog"
 		date="June 2024"
 		emoji="🧑‍💻"
-		url="https://google.com"
+		url="/articles/install-xyz"
 	/>
 
 	<Article

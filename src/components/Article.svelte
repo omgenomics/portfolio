@@ -6,20 +6,23 @@ let { url, title, description = null, date, venue = null, emoji = "📄", author
 <ListGroupItem class="p-0 pt-3">
 	<span class="fs-5">
 		{emoji}
-		<a class="text-decoration-none" href={url} target="_blank">
+		<a class="text-decoration-none" href={url} target={url.startsWith("/") ? null : "_blank"}>
 			{title}
 		</a>
 		<p class="small text-muted">
 			{#if description}
 				<span class="text-dark">{@html description}</span><br />
 			{/if}
+
 			{date}
+
 			{#if venue}
 				&bullet;
 				<span class="fw-bold">
 					{venue}
 				</span>
 			{/if}
+
 			{#if author}
 				<br />
 				<span class="small text-muted">
