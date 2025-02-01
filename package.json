@@ -23,6 +23,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltestrap/sveltestrap": "^v7.0.3",
-		"date-fns": "^4.1.0"
+		"date-fns": "^4.1.0",
+		"mdsvex": "^0.12.3"
 	}
 }
