@@ -48,20 +48,27 @@ $effect(() => {
 	</Collapse>
 </Navbar>
 
-<Container md>
+<Container md class="mb-5">
 	<div class="border-top border-4 mb-3"></div>
 	{@render children?.()}
 
 	<footer class="py-3 my-4 border-top ps-0 opacity-75">
-		<Nav class="float-end">
+		<div class="float-start">
+			<div class="small text-end attribution">
+				<small>
+					<!-- You don't have to keep this notice but we would appreciate it if you did :) -->
+					Template by
+					<a class="text-reset" href="https://github.com/omgenomics/portfolio" target="_blank">OMGenomics</a>
+				</small>
+			</div>
+		</div>
+		<div class="float-end">
 			{#each SOCIAL_MEDIA as social}
 				<SocialMedia platform={social.platform} href={social.url} />
 			{/each}
-		</Nav>
+		</div>
 	</footer>
 </Container>
-
-<br />
 
 <style>
 @media only screen and (max-width: 600px) {
@@ -78,5 +85,9 @@ $effect(() => {
 		margin-bottom: 5px;
 		margin-left: 30px; /* Center my name */
 	}
+}
+
+.attribution {
+	color: #999;
 }
 </style>

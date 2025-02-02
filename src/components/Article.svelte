@@ -11,6 +11,7 @@ let { url, title, description = null, date, venue = null, emoji = "📄", author
 		</a>
 		<p class="small text-muted">
 			{#if description}
+				<!-- eslint-disable-next-line -->
 				<span class="text-dark">{@html description}</span><br />
 			{/if}
 
