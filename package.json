@@ -9,6 +9,7 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
+		"@eslint/compat": "^1.2.6",
 		"@sveltejs/adapter-cloudflare": "^5.0.1",
 		"@sveltejs/kit": "^2.16.1",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
