@@ -1,6 +1,9 @@
 # Portfolio Template
 
-A simple template for a portfolio website, with support for writing blogs in Markdown with code highlighting.
+A simple template for a portfolio website, with support for writing blogs in Markdown, and code highlighting.
+
+|![Screenshot 2025-04-15 at 9 15 40 AM](https://github.com/user-attachments/assets/17244bcf-3c94-4159-b888-f299a1b6075f)|![Screenshot 2025-04-15 at 9 15 33 AM](https://github.com/user-attachments/assets/70dce59b-2f97-483b-ba7e-f89e88bae66b)|
+|--|--|
 
 ## Getting Started
 
