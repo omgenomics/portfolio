@@ -7,7 +7,7 @@ let { name, date = null, description = "", url, img } = $props();
 <Col>
 	<Card color="light" body class="shadow-lg mt-3">
 		<h5>
-			<a class="text-decoration-none stretched-link" href={url} target="_blank">
+			<a class="text-decoration-none stretched-link" href={url} target={url.startsWith("/") ? "" : "_blank"}>
 				{name}
 			</a>
 		</h5>
