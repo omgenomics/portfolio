@@ -5,7 +5,7 @@ export const MY_NAME = "John Doe";
 export const meta_title = "Portfolio Template";
 export const meta_description = "Free template to get you started with your own portfolio website.";
 export const meta_url = "https://portfolio-template.omgenomics.com";
-export const meta_image = "/assets/plants.jpg"; // the preview image on social media (set this to "" if you don't have one)
+export const meta_image = "https://portfolio-template.omgenomics.com/assets/plants.jpg"; // the preview image on social media (set this to "" if you don't have one)
 
 // The first navbar category links to the home page while the others link to their routes
 // e.g. "resume" goes to "src/routes/resume/+page.svelte"
