@@ -14,24 +14,24 @@ import SectionHeader from "$components/SectionHeader.svelte";
 	</div>
 </div>
 
-<SectionHeader title="Featured Projects" />
+<SectionHeader title="What's New" />
 
 <Row cols={{ xl: 3, lg: 3, md: 2, sm: 1, xs: 1 }}>
 	<!-- Photo by <a href="https://unsplash.com/@xteemu">Teemu Paananen</a> on <a href="https://unsplash.com/photos/pic-bzdhc5b3Bxs">Unsplash</a> -->
 	<ProjectCard
-		name="🗣️ Talk at BioConf 2024"
-		date="Nov 2024"
-		url="https://google.com"
+		name="📝 Installing XYZ on Apple M1"
+		date="April 2025"
+		url="/articles/install-xyz"
 		img="/assets/talk.jpg"
-		description="How we used spatial transcriptomics to..."
+		description="How to install the XYZ tool on the M1 chips and avoid the error..."
 	/>
 
 	<!-- Photo by <a href="https://unsplash.com/@chuttersnap">CHUTTERSNAP</a> on <a href="https://unsplash.com/photos/pic-UmncJq4KPcA">Unsplash</a> -->
 	<ProjectCard
-		name="📝 Our XYZ paper has been published"
-		date="December 2023"
+		name="🗞️ Our XYZ paper has been published"
+		date="December 2024"
 		url="https://google.com"
 		img="/assets/plants.jpg"
-		description="We assembled the Rainbow eucalyptus genome..."
+		description="We assembled the Rainbow eucalyptus genome and identified a novel..."
 	/>
 </Row>

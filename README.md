@@ -68,3 +68,4 @@ abc <- c(1, 2, 3)
   - Framework preset: SvelteKit
   - Build command: `npm run build`
   - Build output directory: `.svelte-kit/cloudflare`
+- To host your portfolio on a custom domain, see https://developers.cloudflare.com/pages/configuration/custom-domains/
