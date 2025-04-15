@@ -17,9 +17,10 @@ First, you need to install dependencies:
 
 ```bash
 $ brew install zlib bgzip2
+$ pip install xyz
 ```
 
-Then you can import the xyz module within your Python code:
+Then you can import `xyz` in your Python code:
 
 ```python
 from xyz import biology
@@ -28,4 +29,12 @@ def test():
     for x in biology.stuff():
         print(x)
 
+```
+
+To use this library in your R code:
+
+```R
+install.packages("xyz")
+library(xyz)
+a <- c(1, 2, 3)
 ```
