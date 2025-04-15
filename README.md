@@ -2,8 +2,11 @@
 
 A simple template for a portfolio website, with support for writing blogs in Markdown, and code highlighting.
 
-|![Screenshot 2025-04-15 at 9 15 40 AM](https://github.com/user-attachments/assets/17244bcf-3c94-4159-b888-f299a1b6075f)|![Screenshot 2025-04-15 at 9 15 33 AM](https://github.com/user-attachments/assets/70dce59b-2f97-483b-ba7e-f89e88bae66b)|
-|--|--|
+|    ![landing-page](https://github.com/user-attachments/assets/be75d29d-503e-4809-8a3c-af2a04db68b6)  |  ![resume](https://github.com/user-attachments/assets/6d32c922-b773-408a-bef6-424d297ba053)  | ![blog-post](https://github.com/user-attachments/assets/93e96120-edc3-4e70-9984-1aac12385b4c)  |
+|--|--|--|
+
+See it in action at https://portfolio-template.omgenomics.com/
+
 
 ## Getting Started
 
