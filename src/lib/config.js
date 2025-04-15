@@ -1,6 +1,12 @@
 // Your name as it shows up on the website and the tab name
 export const MY_NAME = "John Doe";
 
+// How your website shows up on Google and Social Media. Make sure to change these values!
+export const meta_title = "Portfolio Template";
+export const meta_description = "Free template to get you started with your own portfolio website.";
+export const meta_url = "https://portfolio-template.omgenomics.com";
+export const meta_image = "/assets/plants.jpg"; // the preview image on social media (set this to "" if you don't have one)
+
 // The first navbar category links to the home page while the others link to their routes
 // e.g. "resume" goes to "src/routes/resume/+page.svelte"
 export const NAVBAR_CATEGORIES = ["about", "resume", "articles", "talks"];

@@ -16,11 +16,13 @@ npm run dev
 
 The main files to modify are:
 
-- Configuration: [src/lib/config.js](./src/lib/config.js) - name, social media links, and navbar links
+- Configuration: [src/lib/config.js](./src/lib/config.js) - name, social media links, SEO tags, and navbar links
 - Home page: [src/routes/+page.svelte](./src/routes/+page.svelte) - about you, and highlighted projects
 - Resume: [src/routes/resume/+page.svelte](./src/routes/resume/+page.svelte) - work experiences and education
 - Articles: [src/routes/articles/+page.svelte](./src/routes/articles/+page.svelte)
 - Talks: [src/routes/talks/+page.svelte](./src/routes/talks/+page.svelte)
+
+To prettify and lint the code, you can run `npm run format && npm run lint`
 
 ## Markdown posts
 
