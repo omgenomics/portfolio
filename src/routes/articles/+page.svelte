@@ -8,6 +8,14 @@ import SectionHeader from "$components/SectionHeader.svelte";
 
 <ListGroup flush>
 	<Article
+		title="How to install ABC"
+		venue="My blog"
+		date="July 2025"
+		emoji="🧬"
+		url="/articles/install-abc"
+	/>
+
+	<Article
 		title="How to install the bioinformatics tool XYZ on Mac OS"
 		venue="My blog"
 		date="June 2024"
