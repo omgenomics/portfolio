@@ -1,5 +1,5 @@
 // Your name as it shows up on the website and the tab name
-export const MY_NAME = "Robert Aboukhalil";
+export const MY_NAME = "John Doe";
 
 // How your website shows up on Google and Social Media. Make sure to change these values!
 export const meta_title = "Portfolio Template";
